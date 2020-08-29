@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.body {
+    background: url(../img/goal.jpg) no-repeat center / cover;
+}
+
+.container {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 40%;
+    padding: 1rem;
+}
+
+.info input {
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+    text-align: center;
+    text-align: left
+}
+
+.info > button {
+    height: 1.7rem;
+    width: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.info #info-content {
+    visibility: hidden;
+}
+
+.info #info-content button{
+    height: 1.7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding:0 .5rem;
+}
+
+.container h3 span {
+    color: red;
+}
+
+#demo1 {
+    text-transform: capitalize;
+}
+
+.light {
+    text-align: center;
+    visibility: hidden;
+    width: 40%;
+    
+}
+
+.light h2 {
+    margin-bottom: 3rem
+}
+
+.light h2 span {
+    color: red;
+    text-transform: capitalize;
+}
+
+#demo3 {
+    display: block;
+    margin: 3rem auto 0;
+    height:3rem;
+    width: 10rem;
+    border:none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+

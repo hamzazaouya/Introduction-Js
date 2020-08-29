@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="demo" class="">
+    <div class="container">
+        <div class="info">
+            <input type="text" id="name" name="usename" placeholder="Type Your Name..."> <!-- Type User Name -->
+            <button class="click" onclick="
+                    document.getElementById('demo1').innerHTML = document.getElementById('name').value,
+                    document.getElementById('info-content').style.visibility = 'visible',
+                    document.getElementById('demo2').innerHTML = document.getElementById('name').value">Click</button>
+                    
+            <div id="info-content">
+                <h3>
+                    Hello Mr: <span id="demo1"></span> How Are You? You Have an Exercice. Click Button Below To see it!
+                </h3>
+                <button onclick="document.getElementById('light').style.visibility = 'visible'">Exercice</button>
+            </div>
+        </div>
+
+        <div class="light" id="light">
+            <h2>Mr <span id="demo2"></span> Can You Please Do this Simple Exercice</h2>
+            
+            <button onclick="document.getElementById('myImage').src = 'img/pic_bulbon.gif',
+                    document.getElementById('demo3').style.background= 'yellow'">turn on the light</button>
+                    
+            <img id="myImage" src="img/pic_bulboff.gif">
+            <button onclick="document.getElementById('demo3').style.background= '#efefef',
+                    document.getElementById('myImage').src = 'img/pic_bulboff.gif'">turn off the light</button>
+                    
+            <button id="demo3" onclick="document.getElementById('demo').classList.add('body')">See the Magic</button>
+        </div>
+    </div>
+</body></html>
